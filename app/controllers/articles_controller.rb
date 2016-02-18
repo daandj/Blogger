@@ -36,7 +36,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Articel.find(params[:id])
+    @article = Article.find(params[:id])
     @article.update(article_params)
 
     flash.notice = "Article '#{@article.title}' Updated!"
